@@ -1,3 +1,12 @@
+#!/usr/bin/env python3
+"""
+API authentication module
+"""
+
+from flask import request
+from typing import List, TypeVar
+
+
 class Auth:
     """ Authentication """
 
@@ -23,4 +32,3 @@ class Auth:
     def current_user(self, request=None) -> TypeVar('User'):
         """ placeholder """
         return None
-    
