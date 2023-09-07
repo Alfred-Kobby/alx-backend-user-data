@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+"""API session authentication module"""
+
 from api.v1.auth.auth import Auth
 from models.user import User
 import uuid
@@ -43,4 +46,3 @@ class SessionAuth(Auth):
             return False
         del self.user_id_by_session_id[cookie]
         return True
-    
